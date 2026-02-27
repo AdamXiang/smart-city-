@@ -1,0 +1,26 @@
+# 1. 虛擬環境與套件管理 (超重要，絕對不進版控)
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 2. PyCharm 專屬設定檔 (避免把你的個人編輯器習慣推給同事)
+.idea/
+*.iml
+
+# 3. macOS 系統垃圾 (如果你是用 Mac 開發)
+.DS_Store
+
+# 4. 環境變數與機密 (防止密碼外洩的最後防線！)
+.env
+.env.*
+*.pem
+
+# 5. 資料工程專屬：本機測試資料與日誌 (避免把好幾 GB 的 Log 傳上 Git)
+logs/
+*.log
+data/
+output/
+spark-warehouse/
+metastore_db/
+derby.log
