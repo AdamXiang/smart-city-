@@ -1,6 +1,6 @@
 
 x-spark-common: &spark-common
-  image: bitnamilegacy/spark:3.5.1
+  build: .
   platform: linux/amd64
   volumes:
     - ./jobs:/opt/bitnami/spark/jobs
@@ -70,7 +70,7 @@ services:
     networks:
       - smartcity
   spark-master:
-    image: bitnamilegacy/spark:3.5.1
+    build: .
     platform: linux/amd64
     volumes:
       - ./jobs:/opt/bitnami/spark/jobs
